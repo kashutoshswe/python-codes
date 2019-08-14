@@ -1,5 +1,5 @@
 """
-uthor : Ashutosh Kumar
+Author : Ashutosh Kumar
 PRN : 19030142009
 
 Assignment - To read a function name from the user and if the function is present for the list then perform that function
