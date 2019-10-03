@@ -11,7 +11,7 @@ try:
     # Recursive function to flatten the list
     def unnest(l):
         new_list = []
-        for item in new_list:
+        for item in l:
             if isinstance(item, list):
                 new_list.extend(unnest(item))
             else:
