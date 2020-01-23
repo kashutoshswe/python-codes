@@ -1,0 +1,17 @@
+''' 
+Author : Ashutosh Kumar
+Version : 1.0
+Description : Delete many records matching conditions, if no condition delete all
+Email : ashutoshkumardbms@gmail.com
+'''
+
+
+import pymongo
+
+myclient = pymongo.MongoClient('mongodb://localhost:27017/')
+mydb = myclient['mydatabase']
+mycol = mydb['customers']
+
+myquery = {"address":{"$regex": "^S"}}
+x = mycol.delete_many(myquery)
+print(x.deleted_count,"Documents Deleted ")
